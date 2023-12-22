@@ -2,7 +2,11 @@
 ## Abstract
 The aim of this project is to examine data regarding the spatial distribution of crimes committed from 2006 to 2023 a year in the New York City, in the United States of America. 
 ## Datasets
-https://catalog.data.gov/dataset/nypd-shooting-incident-data-historic 
+* csv: https://catalog.data.gov/dataset/nypd-shooting-incident-data-historic <br>
+* shapefile: https://data.cityofnewyork.us/Public-Safety/NYPD-Shooting-Incident-Data-Historic-/833y-fsy8 
+
+## Other analysis:
+* https://andrewpwheeler.com/tag/nyc/
 
 ## NYC data analyse:
 * https://www.kaggle.com/code/mmalam/spatial-data-analysis-using-geopandas
