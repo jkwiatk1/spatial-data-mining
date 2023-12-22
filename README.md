@@ -6,7 +6,9 @@ The aim of this project is to examine data regarding the spatial distribution of
 * shapefile: https://data.cityofnewyork.us/Public-Safety/NYPD-Shooting-Incident-Data-Historic-/833y-fsy8 
 
 ## Other analysis:
+* https://contextily.readthedocs.io/en/latest/warping_guide.html
 * https://andrewpwheeler.com/tag/nyc/
+* https://towardsdatascience.com/lets-do-spatial-clustering-with-dbscan-c3dbfd9fc4d2
 
 ## NYC data analyse:
 * https://www.kaggle.com/code/mmalam/spatial-data-analysis-using-geopandas
@@ -20,14 +22,10 @@ The aim of this project is to examine data regarding the spatial distribution of
 
 ### Temporary base files:
 * https://github.com/chrisPiemonte/crime-analysis/tree/master
-* https://www.kaggle.com/code/mmalam/spatial-data-analysis-using-geopandas
-* https://www.kaggle.com/code/surajpm/geospatial-analysis-of-new-york-city-crimes
-* https://www.kaggle.com/datasets/thedataperson/nypd-shooting-incident-data-20062021/code
-* https://www.kaggle.com/code/thedataperson/note-book-nypd-shooting-incident-data-2006-2021
+* https://www.kaggle.com/code/thedataperson/note-book-nypd-shooting-incident-data-2006-2021 
 * https://www.kaggle.com/code/everndah/new-york-city-shooting-incidences-2006-2021-eda
+* https://www.kaggle.com/code/mmalam/spatial-data-analysis-using-geopandas
 * https://www.kaggle.com/code/assafco/nyc-crime-vs-education-geovisualisation-tutorial
-* https://www.kaggle.com/code/zeinebghorbel/ny-crimes
-* https://www.kaggle.com/code/praanj/nyc-crime-complaints-geo-spatial-data-via-kepler
 
 ### Some datasets and spatial learning:
 * https://freegisdata.rtwilson.com/
