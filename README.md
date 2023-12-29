@@ -5,6 +5,17 @@ The aim of this project is to examine data regarding the spatial distribution of
 * csv: https://catalog.data.gov/dataset/nypd-shooting-incident-data-historic <br>
 * shapefile: https://data.cityofnewyork.us/Public-Safety/NYPD-Shooting-Incident-Data-Historic-/833y-fsy8 
 
+## Aricles DBSCAN:
+* https://www.youtube.com/watch?v=cFeo-eV5sHw
+* https://scrunts23.medium.com/dbscan-algorithm-from-scratch-in-python-475b82e0571c
+* https://medium.com/analytics-vidhya/dbscan-from-scratch-almost-b02096600c14
+* https://www.kaggle.com/code/bhavik0901/dbscan-clustering-from-scratch
+* https://colab.research.google.com/drive/1DphvjpgQXwBWQq08dMyoSc6UREzXLxSE?usp=sharing
+* https://github.com/aravindsairam/DBSCAN_from_-scratch/blob/master/dbscan.ipynb
+* https://github.com/scikit-learn/scikit-learn/blob/main/sklearn/cluster/_dbscan.py
+* https://github.com/eriklindernoren/ML-From-Scratch/blob/master/mlfromscratch/unsupervised_learning/dbscan.py
+* 
+
 ## Other analysis:
 * https://contextily.readthedocs.io/en/latest/warping_guide.html
 * https://andrewpwheeler.com/tag/nyc/
