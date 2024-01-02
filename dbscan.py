@@ -99,7 +99,7 @@ def dbscan(X, epsilon, min_samples):
 
 
 np.random.seed(42)
-X = np.random.rand(100, 2)
+X = np.random.rand(150, 2)
 epsilon = 0.08
 min_samples = 5
 
