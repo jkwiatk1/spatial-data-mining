@@ -8,7 +8,7 @@ def region_query(X, point_idx, epsilon):
     """
     neighbors = []
     for i, point in enumerate(X):
-        if np.linalg.norm(X[point_idx] - point) < epsilon:
+        if point_idx != i and np.linalg.norm(X[point_idx] - point) <= epsilon:  # Count euclidean distance
             neighbors.append(i)
     return set(neighbors)
 
@@ -35,11 +35,11 @@ def dbscan(X, epsilon, min_samples):
     """
     DBSCAN: Density-Based Spatial Clustering of Applications with Noise
     """
-    labels = np.zeros(X.shape[0], dtype=int) - 1  # Initialize labels as -1 (unclassified)
+    labels = np.zeros(X.shape[0], dtype=int)
     cluster_id = 0
 
     for i in range(X.shape[0]):
-        if labels[i] != -1:  # Previously processed in expand_cluster
+        if labels[i] != 0:
             continue
 
         neighbors = region_query(X, i, epsilon)
@@ -53,21 +53,24 @@ def dbscan(X, epsilon, min_samples):
 
 
 def test():
-    np.random.seed(42)
+    np.random.seed(43)
     X = np.random.rand(150, 2)
     epsilon = 0.08
     min_samples = 5
 
     labels = dbscan(X, epsilon, min_samples)
 
-    plt.figure(figsize=(10, 5))
+    plt.figure(figsize=(12, 5))
     plt.subplot(1, 3, 1)
     plt.scatter(X[:, 0], X[:, 1], c='gray', label='Dane przed DBSCAN')
     plt.title('Przed DBSCAN')
+    plt.ylim(0, 1)
 
     plt.subplot(1, 3, 2)
-    plt.scatter(X[:, 0], X[:, 1], c=labels, cmap='viridis', label='Klastry po DBSCAN')
+    mask = labels != -1
+    plt.scatter(X[mask, 0], X[mask, 1], c=labels[mask], cmap='viridis', label='Klastry po DBSCAN')
     plt.title('Po DBSCAN')
+    plt.ylim(0, 1)
 
     from sklearn.cluster import DBSCAN
 
@@ -75,9 +78,10 @@ def test():
     labels_sk = dbscan_sk.fit_predict(X)
 
     plt.subplot(1, 3, 3)
-    plt.scatter(X[:, 0], X[:, 1], c=labels_sk, cmap='viridis', label='Klastry po DBSCAN scikit')
+    mask_sk = labels_sk != -1
+    plt.scatter(X[mask_sk, 0], X[mask_sk, 1], c=labels_sk[mask_sk], cmap='viridis', label='Klastry po DBSCAN scikit')
     plt.title('Po DBSCAN scikit')
-
+    plt.ylim(0, 1)
     plt.show()
 
 
