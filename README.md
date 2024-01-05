@@ -13,16 +13,15 @@ The aim of this project is to examine data regarding the spatial distribution of
 * https://colab.research.google.com/drive/1DphvjpgQXwBWQq08dMyoSc6UREzXLxSE?usp=sharing
 * https://github.com/aravindsairam/DBSCAN_from_-scratch/blob/master/dbscan.ipynb
 * https://github.com/scikit-learn/scikit-learn/blob/main/sklearn/cluster/_dbscan.py
-* https://github.com/eriklindernoren/ML-From-Scratch/blob/master/mlfromscratch/unsupervised_learning/dbscan.py
-* 
+* https://github.com/eriklindernoren/ML-From-Scratch/blob/master/mlfromscratch/unsupervised_learning/dbscan.py GOOD 
 
 ## Other analysis:
 * https://contextily.readthedocs.io/en/latest/warping_guide.html
-* https://andrewpwheeler.com/tag/nyc/
-* https://towardsdatascience.com/lets-do-spatial-clustering-with-dbscan-c3dbfd9fc4d2
+* https://andrewpwheeler.com/tag/nyc/ GOOD
+* https://towardsdatascience.com/lets-do-spatial-clustering-with-dbscan-c3dbfd9fc4d2 GOOD
 
 ## NYC data analyse:
-* https://isaacmichaels.netlify.app/post/shooting-incidents-in-new-york-city/
+* https://isaacmichaels.netlify.app/post/shooting-incidents-in-new-york-city/ GOOD
 * https://www.kaggle.com/code/everndah/new-york-city-shooting-incidences-2006-2021-eda
 * https://www.kaggle.com/code/mmalam/spatial-data-analysis-using-geopandas
 * https://www.kaggle.com/code/surajpm/geospatial-analysis-of-new-york-city-crimes
