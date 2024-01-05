@@ -22,6 +22,7 @@ The aim of this project is to examine data regarding the spatial distribution of
 * https://towardsdatascience.com/lets-do-spatial-clustering-with-dbscan-c3dbfd9fc4d2
 
 ## NYC data analyse:
+* https://isaacmichaels.netlify.app/post/shooting-incidents-in-new-york-city/
 * https://www.kaggle.com/code/everndah/new-york-city-shooting-incidences-2006-2021-eda
 * https://www.kaggle.com/code/mmalam/spatial-data-analysis-using-geopandas
 * https://www.kaggle.com/code/surajpm/geospatial-analysis-of-new-york-city-crimes
