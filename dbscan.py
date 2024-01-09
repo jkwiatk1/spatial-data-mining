@@ -1,5 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import argparse
+import pandas as pd
 
 
 def region_query(X, point_idx, epsilon):
@@ -52,7 +54,25 @@ def dbscan(X, epsilon, min_samples):
     return labels
 
 
-def test():
+def parse_arguments():
+    parser = argparse.ArgumentParser(description='Run DBSCAN clustering.')
+    parser.add_argument('--min_samples', type=int, default=5, help='Minimum number of samples in a cluster.')
+    parser.add_argument('--epsilon', type=float, default=0.08,
+                        help='The maximum distance between two samples for them to be considered as in the same '
+                             'neighborhood.')
+    parser.add_argument('--data_path', type=str, default=None,
+                        help='Path to the dataset file (CSV). If not provided, a random dataset will be generated.')
+
+    return parser.parse_args()
+
+
+def test(min_samples, epsilon, data_path):
+    if data_path:
+        X = pd.read_csv(data_path).values
+    else:
+        np.random.seed(43)
+        X = np.random.rand(150, 2)
+
     np.random.seed(43)
     X = np.random.rand(150, 2)
     epsilon = 0.08
@@ -86,4 +106,5 @@ def test():
 
 
 if __name__ == "__main__":
-    test()
+    args = parse_arguments()
+    test(args.min_samples, args.epsilon, args.data_path)
