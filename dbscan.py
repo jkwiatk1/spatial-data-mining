@@ -70,11 +70,9 @@ def test(min_samples, epsilon, data_path):
     if data_path:
         X = pd.read_csv(data_path).values
     else:
-        np.random.seed(43)
+        np.random.seed(40)
         X = np.random.rand(150, 2)
 
-    np.random.seed(43)
-    X = np.random.rand(150, 2)
     epsilon = 0.08
     min_samples = 5
 
