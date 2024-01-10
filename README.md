@@ -13,4 +13,4 @@ Implementation of the DBSCAN algorithm and comparison of the obtained results wi
 * shapefile: https://s-media.nyc.gov/agencies/dcp/assets/files/zip/data-tools/bytes/nypp_23d.zip
 
 ## Detailed project documentation in Polish language :
-
+https://github.com/jkwiatk1/spatial-data-mining/blob/main/data/docs/Dokumentacja_ko%C5%84cowa_SPDB_Jan_Kwiatkowski.pdf
